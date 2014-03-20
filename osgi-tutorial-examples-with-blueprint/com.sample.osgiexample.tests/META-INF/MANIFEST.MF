@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Tests
+Bundle-SymbolicName: com.sample.osgiexample.tests
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Example
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: com.sample.osgiexample.provider;version="1.0.0",
+ com.sample.osgiexample.stockanalyser,
+ org.osgi.framework;version="1.3.0"
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.junit;bundle-version="4.10.0"

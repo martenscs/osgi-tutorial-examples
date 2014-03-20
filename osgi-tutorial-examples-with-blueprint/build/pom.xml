@@ -12,13 +12,13 @@
 		<project.build.java.version>1.6</project.build.java.version>
 		<web-deploy-artifact>../web-release</web-deploy-artifact>
 	</properties>
-
 	<modules>
-	    <module>../com.sample.osgiexample</module>
 		<module>../com.sample.osgiexample.provider</module>
 		<module>../com.sample.osgiexample.providera</module>
 		<module>../com.sample.osgiexample.providerb</module>
 		<module>../com.sample.osgiexample.stockanalyser</module>
+		<module>../com.sample.osgiexample.tests</module>
+		<module>../com.sample.osgiexample</module>
 	</modules>
 	<repositories>
 		<repository>
