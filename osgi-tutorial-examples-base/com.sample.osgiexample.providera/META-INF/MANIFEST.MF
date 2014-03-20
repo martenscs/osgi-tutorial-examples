@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Providera
+Bundle-SymbolicName: com.sample.osgiexample.providera
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.sample.osgiexample.providera.Activator
+Bundle-Vendor: Sample
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: org.osgi.framework;version="1.3.0"
+Bundle-ActivationPolicy: lazy
+Export-Package: com.sample.osgiexample.providera
