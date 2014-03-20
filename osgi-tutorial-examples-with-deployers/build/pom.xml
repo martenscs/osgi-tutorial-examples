@@ -24,6 +24,7 @@
 		<module>p2-repository</module>
 		<module>war-repository</module>
 
+		<module>scp-repository</module>
 	</modules>
 	<repositories>
 		<repository>
