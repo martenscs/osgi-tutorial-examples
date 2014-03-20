@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.osgi.org/xmlns/blueprint/v1.0.0
+      http://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd">
+
+	<reference id="providerB" interface="com.sample.osgiexample.provider.PriceService"
+		filter="(osgi.jndi.service.name=priceServices/B)" />
+
+	<reference id="providerA" interface="com.sample.osgiexample.provider.PriceService"
+		filter="(osgi.jndi.service.name=priceServices/A)" />
+
+	<service id="stockanalyserService" ref="stockanalyser"
+		interface="com.sample.osgiexample.stockanalyser.StockAnalyserService">
+		<service-properties>
+			<entry key="osgi.jndi.service.name" value="priceServices/stockanalyserService" />
+		</service-properties>
+	</service>
+
+	<bean id="stockanalyser"
+		class="com.sample.osgiexample.stockanalyser.StockAnalyserServiceImpl">
+		<property name="serviceA" ref="providerA" />
+		<property name="serviceB" ref="providerB" />
+		<property name="bundle" ref="blueprintBundle" />
+	</bean>
+
+</blueprint>

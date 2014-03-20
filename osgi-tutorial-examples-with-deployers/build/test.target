@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?>
+
+<target name="test" sequenceNumber="2">
+<locations>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
+<unit id="org.equinox.osgi.runtime.feature.group" version="0.0.1.201403181610"/>
+<repository location="http://p2.martenscs.net/equinox-runtime"/>
+</location>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
+<unit id="org.apache.aries.feature.group" version="1.0.0.201402211947"/>
+<repository location="http://p2.martenscs.net/aries"/>
+</location>
+</locations>
+<includeBundles>
+<plugin id="org.eclipse.equinox.ds"/>
+<plugin id="org.apache.felix.gogo.command"/>
+<plugin id="org.eclipse.core.jobs"/>
+<plugin id="org.junit4"/>
+<plugin id="org.junit"/>
+<plugin id="org.eclipse.equinox.cm"/>
+<plugin id="org.eclipse.core.runtime.compatibility.registry"/>
+<plugin id="org.eclipse.equinox.util"/>
+<plugin id="org.eclipse.osgi.services"/>
+<plugin id="org.eclipse.core.expressions"/>
+<plugin id="org.eclipse.core.resources"/>
+<plugin id="org.objectweb.asm" version="3.3.1.v201105211655"/>
+<plugin id="org.eclipse.equinox.registry"/>
+<plugin id="org.eclipse.equinox.preferences"/>
+<plugin id="org.eclipse.osgi"/>
+<plugin id="ch.qos.logback.slf4j"/>
+<plugin id="org.apache.aries.proxy.impl"/>
+<plugin id="org.hamcrest.core"/>
+<plugin id="org.apache.aries.proxy.api"/>
+<plugin id="org.eclipse.core.runtime"/>
+<plugin id="org.apache.aries.util"/>
+<plugin id="org.apache.aries.blueprint.api"/>
+<plugin id="org.eclipse.core.commands"/>
+<plugin id="org.eclipse.core.runtime.compatibility.auth"/>
+<plugin id="org.eclipse.equinox.common"/>
+<plugin id="org.apache.felix.gogo.runtime"/>
+<plugin id="javax.servlet"/>
+<plugin id="org.eclipse.core.variables"/>
+<plugin id="org.apache.felix.gogo.shell"/>
+<plugin id="org.eclipse.equinox.app"/>
+<plugin id="osgi.enterprise"/>
+<plugin id="org.slf4j.api"/>
+<plugin id="org.apache.aries.blueprint.cm"/>
+<plugin id="org.eclipse.equinox.console"/>
+<plugin id="javax.transaction"/>
+<plugin id="ch.qos.logback.classic"/>
+<plugin id="org.eclipse.core.filesystem.win32.x86_64"/>
+<plugin id="ch.qos.logback.core"/>
+<plugin id="org.apache.aries.blueprint.core"/>
+<plugin id="org.eclipse.core.filesystem"/>
+<plugin id="org.eclipse.core.contenttype"/>
+</includeBundles>
+</target>

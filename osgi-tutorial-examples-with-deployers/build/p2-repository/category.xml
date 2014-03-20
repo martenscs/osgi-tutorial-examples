@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.sample.osgiexample_1.0.0.qualifier.jar" id="com.sample.osgiexample" version="1.0.0.qualifier">
+      <category name="OSGi Example Project"/>
+   </feature>
+   <feature url="features/com.sample.osgiexample.source_1.0.0.qualifier.jar" id="com.sample.osgiexample.source" version="1.0.0.qualifier">
+      <category name="OSGi Example Project"/>
+   </feature>
+   <category-def name="OSGi Example Project" label="OSGi Example Project"/>
+</site>
